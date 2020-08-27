@@ -10,9 +10,11 @@ A neural network to predict the total distance traveled by all voxels of a given
 
 
 ### NumPy Robot Prediction.py
-A modification of the PyTorch Robot Prediction model to run only on NumPy/SKlearn. Pyodide can handle both of these packages, but not PyTorch. Only the linear neural network was replicated - Star's prior work showed that there was negligible difference between the accuracy of convolutional and linear models, and implementing a convolutional neural network without pytorch would have been an extremely time-consuming endeavor. However, it can be done and remains a possible direction for future work. 
+A modification of the PyTorch Robot Prediction model to run only on NumPy/SKlearn. Pyodide can handle both of these packages, but not PyTorch. Only the linear neural network was replicated - Star's prior work showed that there was negligible difference between the accuracy of convolutional and linear models, and implementing a convolutional neural network without pytorch would have been an extremely time-consuming endeavor. However, it can be done and remains a possible direction for future work. Also, the linear neural network has lots of different options/possible modifications because it is using SKLearn - see documentation here. 
+https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html
 
 
 ### Bundler.py and Template.py
 These two files are related. Because files cannot be read in through UVMcomputes, these two files are used to output a file that can be run on UVMcomputes. The code used is that in NumPy Robot Prediction.py. Bundler.py processes all of the files, reads in code from Template.py, replaces tags in Template.py with strings representing robots and their distances traveled, and writes that in a new file called file_to_run.py. The package pyminifier is also used to reduce the size of file_to_run.py through minification and obfuscation, although it is not very useful - the smaller file ends up being over 99.9% the size of the original. This smaller file is called file_to_run_small.py.
+Currently, when file_to_run.py is run, it does not give any output - it merely gives confirmation that the model has been trained. Also, there are a number of outputs that aren't shown when run on UVMComputes but appear when run on your own computer. In the future, the bundler file should be made to read in test robots to make predictions on and a csv should be outputted. 
 
