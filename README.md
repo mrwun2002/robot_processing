@@ -4,7 +4,7 @@
 This project is a continuation of https://github.com/liusida/DeepFinal (made by Star Liu).
 Star's project explored the use of neural networks to predict the distance a voxelbot (a robot made from combinations of cubes of different materials) will travel given the structure/genome of the voxelbot. The purpose of this project is to make such a neural network runnable on UVMComputes, an in-browser supercomputer currently in development. UVMComputes in unable to take input from multiple files, so a file will be generated from a template and "bundler", which will take in file input and generate a string version of the data. That string will be substituted in for tags in the template, and new file will be created. 
 
-![](https://ibb.co/5kW3wh3)
+![Diagram](https://i.ibb.co/LrzyHdy/image.jpg)
 
 ### Files:
 #### Robot Builder.py
