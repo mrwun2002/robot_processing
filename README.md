@@ -1,7 +1,7 @@
 # robot_processing
 
 
-### Robot Builder.py:
+### Robot Builder.py
 A general framework to read in robot, base, and report files and process them. Each robot is its own object, with its own properties. Each voxel in each robot is also an object, given a material type with properties determined by an associated palette/base file. Currently, the only properties extracted for each material are rgba values, but the code can easily be adapted to pull out other values as well. This palette/material structure can be implemented in future neural networks to allow for the modeling/prediction of robots with custom materials.
 
 
