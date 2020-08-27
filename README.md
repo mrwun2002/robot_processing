@@ -12,7 +12,7 @@ A general framework to read in robot, base, and report files and process them. E
 
 
 #### PyTorch Robot Prediction.py
-A neural network to predict the total distance traveled by all voxels of a given robot. Runs two different models - the first one is a convolutional 3d neural network, and the second one is a standard, fully-connected deep neural network. The feature vectors are broken up into 5 channels of 0's and 1's, each corresponding to one of five materials. A 1 indicates that that material is present at that location. This is a version of one-hot encoding. 
+A neural network to predict the total distance traveled by all voxels of a given robot. Runs two different models - the first one is a convolutional 3d neural network, and the second one is a standard, fully-connected deep neural network. The feature vectors are broken up into 5 channels of 0's and 1's, four of them corresponding to a material and one indicating no material at all. A 1 indicates that that material is present at that location. This is a version of one-hot encoding. 
 
 
 #### NumPy Robot Prediction.py
